@@ -7,6 +7,7 @@ exports.up = async function(knex) {
       .notNullable()
       .unique();
     tbl.string("password").notNullable();
+    tbl.string("department", 128).notNullable();
   });
 };
 
